@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>Миссия Колонизация Марса</h1>
+<h2>Кто стоит в очереди?</h2>
+{% set user_list = ['инженер - следователь', 'пилот', 'строитель', 'экзобиолог', 'врач', 'климатолог', 'астрогеолог'] %}
+{% if "ol" in list %}
+    <ol>
+        {% for user in user_list %}
+        <li>{{ user }}</li>
+        {% endfor %}
+    </ol>
+{% elif "ul" in list %}
+    <ul>
+        {% for user in user_list %}
+        <li>{{ user }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
