@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Миссия Колонизация Марса</h1>
+         {% if "инженер" in prof %}
+            <h2>инженер</h2>
+            <img src=../static/img/cosmo_place_it.png alt="Инженерные тренажеры", width=800>
+         {% elif "строитель" in prof%}
+            <h2>строитель</h2>
+            <img src=../static/img/cosmo_place_ns.png alt="Научные симуляторы", width=800>
+         {% endif %}
+    </body>
+</html>
